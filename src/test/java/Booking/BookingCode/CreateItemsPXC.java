@@ -16,7 +16,7 @@ public static void main(String[] args) throws InterruptedException {
      driver.manage().window().maximize();
      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
      WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
-
+//test comment for Jenkins cicd testing
      // Login steps
      WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".form-control.ltr_override")));
      emailField.sendKeys("ritik.yadav@hochhuth-consulting.de");
